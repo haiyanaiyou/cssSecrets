@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>半透明边框</title>
+  <style>
+    body{
+      background-color:bisque;
+    }
+    .demo {
+      width: 300px;
+      height: 300px;
+      background-color:#fff;
+      margin: 20px;
+      /* 默认情况下，背景会延伸到边框所在的区域下层，所以设置本透明边框并不会显示出来 */
+      border: 10px solid hsla(0,0%,100%,.5); 
+      /* 
+        可以通过background-clip 属性来调整
+        此属性的初始值是border-box  意味着背景会被元素的border box（边框的外沿框）裁切掉，
+        如果不希望背景侵入边框所在的范围，可设置为padding-box，这样浏览器就会用内边距的外沿来把背景裁切掉
+      
+      */
+      background-clip: padding-box;
+    }
+  </style>
+</head>
+<body>
+  <div class="demo">text</div>
+</body>
+</html>

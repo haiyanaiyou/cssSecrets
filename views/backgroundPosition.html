@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>background-position</title>
+  <style>
+    /* 
+      background-position 是基于padding-box为基准的，这样边框才不会遮住背景图片；
+      background-origin 可以改变这种行为
+                        默认值是padding-box
+                        也可为border-box | content-box   
+    */
+    div{
+      width: 200px;
+      height: 200px;
+      background: url(https://www.google.com/imgres?imgurl=https%3A%2F%2Falifei02.cfp.cn%2Fcreative%2Fvcg%2Fveer%2F612%2Fveer-312002591.jpg&imgrefurl=https%3A%2F%2Fwww.veer.com%2Ftopic%2F779%2F&tbnid=oJstS93-RlkXdM&vet=12ahUKEwjEvs7qyKfuAhVFR5QKHYcHAOsQMygAegUIARCkAQ..i&docid=4Z6v7xP-x0qbxM&w=612&h=408&q=%E5%9B%BE%E7%89%87&ved=2ahUKEwjEvs7qyKfuAhVFR5QKHYcHAOsQMygAegUIARCkAQ) no-repeat bottom right #58a;
+      background-position: calc(100% - 20px) calc(100% - 10px);
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+</body>
+</html>

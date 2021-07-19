@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>条纹背景</title>
+  <link rel="stylesheet" href="../../common/style/global.css">
+  <style>
+    .striped{
+      background: linear-gradient(45deg, #fb3 25%, #58a 0, #58a 50%, #fb3 0, #fb3 75%, #58a 0);
+      background-size: 30px 30px;
+    }
+    .demo{
+      background: #58a;
+      background-image: repeating-linear-gradient(30deg, 
+      hsla(0,0%, 100%,.1),
+      hsla(0,0%, 100%,.1) 15px, 
+      transparent 0, 
+      transparent 30px);
+    }
+  </style>
+</head>
+<body>
+  <div class="normal striped"></div>
+  <div class="normal demo"></div>
+</body>
+</html>

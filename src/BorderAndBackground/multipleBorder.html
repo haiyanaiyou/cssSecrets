@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>多重边框</title>
+  <link rel="stylesheet" href="../../common/style/global.css">
+  <style>
+    .multiple-border{
+      background-color: aquamarine;
+      /* 
+        box-shadow 的好处在于支持逗号分割语法，可以创建任意数量的投影
+      */
+      box-shadow: 0 0 0 10px #655, 0 0 0 15px pink;
+      margin: 30px;
+    }
+    .outline{
+      background: yellowgreen;
+      margin: 60px 30px;
+      border: 10px solid black;
+      outline: 5px solid red;
+      border-radius:20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="multiple-border normal">
+    box-shadow
+  </div>
+  <div class="outline normal">oulline</div>
+</body>
+</html>
