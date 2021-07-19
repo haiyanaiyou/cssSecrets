@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>染色效果</title>
+  <style>
+    /* 方案一：filter */
+    .demo1 img{
+      transition: .5s filter;
+      filter: sepia(1) saturate(4) hue-rotate(295deg);
+    }
+    .demo1 img:hover,.img:focus{
+      filter: none;
+    }
+
+    /* 方案二： 混合模式 */
+    .demo2 {
+      width:300px;
+      height: 200px;
+      background-image: url('../../common/img/images.jpg');
+      background-size: cover;
+      background-color: hsl(335, 100%, 50%);
+      background-blend-mode: luminosity;
+      transition: .5s background-color;
+    }
+    .demo2:hover{
+      background-color: transparent;
+    }
+  </style>
+</head>
+<body>
+  <p>filter</p>
+  <div class="demo1">
+    <img src="../../common/img/images.jpg" alt="" srcset="">
+  </div>
+  <p>混合模式</p>
+  <div class="demo2"></div>
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>单侧投影</title>
+  <link rel="stylesheet" href="../../common/style/global.css">
+  <style>
+    .single-shadow{
+      background-color: aquamarine;
+      box-shadow: 5px 5px 4px -4px rgb(32, 32, 32);
+    }
+    .double-shadow{
+      background-color: aquamarine;
+      box-shadow: 5px 0 5px -5px black,
+                  -5px 0 5px -5px black;
+    }
+  </style>
+</head>
+<body>
+  <div class="normal single-shadow"></div>
+  <div class="normal double-shadow">双侧阴影</div>
+</body>
+</html>
